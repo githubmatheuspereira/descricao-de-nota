@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 outputText += `Sociedade Uniprofissional, incidência ISS trimestral, conforme Decreto nº 53.151, de 17 de maio de 2012.\n`
             }
         } else if (type === "Procedimento") {
-            outputText = "Procedimento médico prestado a(o) mesma(o) em " + date + ":\n\n";
+            outputText = "Serviços médico prestado a(o) mesma(o) em " + date + ":\n\n";
             outputText += "Cid: " + cid + " e Código Tuss " + codTuss + " - Valor: R$ " + value + ",00\n\n";
             outputText += `Abaixo as alíquotas de tributos incidentes a esta prestação de serviços conforme a Lei 12.741/2012.\nPis 0,65%..................... (${(Math.ceil(value * 0.0065 * 100) / 100).toFixed(2)})\nCofins 3%..................... (${(Math.ceil(value * 0.03 * 100) / 100).toFixed(2)})\n`
             if (doctor === "Renato") {
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 outputText += `Sociedade Uniprofissional, incidência ISS trimestral, conforme Decreto nº 53.151, de 17 de maio de 2012.\n`
             }
         } else if (type === "IR") {
-            outputText = "Procedimento médico prestado a(o) mesma(o) em " + date + ":\n\n";
+            outputText = "Serviços médico prestado a(o) mesma(o) em " + date + ":\n\n";
             outputText += "Valor total: R$ " + value + ",00\n\n";
             outputText += `Abaixo as alíquotas de tributos incidentes a esta prestação de serviços conforme a Lei 12.741/2012.\nPis 0,65%..................... (${(Math.ceil(value * 0.0065 * 100) / 100).toFixed(2)})\nCofins 3%..................... (${(Math.ceil(value * 0.03 * 100) / 100).toFixed(2)})\n`
             if (doctor === "Renato") {
